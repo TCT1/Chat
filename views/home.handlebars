@@ -1,0 +1,18 @@
+<div>
+    <h1>Bienvenido</h1>
+</div>
+
+<div>
+    <input id="chatbox">
+</div>
+
+<div>
+    <p id="messageLogs"></p>
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/home.js"></script>
+<script>
+    const sockets=io.connect("http://localhost:8080/",{forceNew:true})
+</script>
